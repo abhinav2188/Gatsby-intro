@@ -5,11 +5,18 @@
  */
 
 module.exports = {
-  siteMetaData : {
+  siteMetadata : {
     title : "my first gatsby site",
   },
   /* Your site config here */
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+      },
+    },
     {
       resolve: `gatsby-plugin-typography`,
       options: {

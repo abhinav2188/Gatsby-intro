@@ -7,7 +7,7 @@ export default function Container({ children }) {
         graphql`
         query{
             site{
-                siteMetaData{
+                siteMetadata{
                     title
                 }
             }
@@ -15,7 +15,7 @@ export default function Container({ children }) {
         `
     )
   return <div className={containerStyles.container}>
-  <h3>{data.site.siteMetaData.title}</h3>
+  <h3>{data.site.siteMetadata.title}</h3>
   {children}
   </div>
 }

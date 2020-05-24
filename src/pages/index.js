@@ -8,7 +8,7 @@ export default function Home({data}) {
       <Link to="/contact/">Contact</Link>
       Hello world!
       <p>
-      {data.site.siteMetaData.title}
+      {data.site.siteMetadata.title}
       </p>
     </Container>
   )
@@ -17,7 +17,7 @@ export default function Home({data}) {
 export const query = graphql `
   query{
     site{
-      siteMetaData{
+      siteMetadata{
         title
       }
     }
