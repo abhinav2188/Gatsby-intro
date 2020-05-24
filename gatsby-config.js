@@ -5,6 +5,9 @@
  */
 
 module.exports = {
+  siteMetaData : {
+    title : "my first gatsby site",
+  },
   /* Your site config here */
   plugins: [
     {
