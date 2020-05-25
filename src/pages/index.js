@@ -10,7 +10,7 @@ export default function Home({data}) {
       </p>
       <p>posts {data.allMarkdownRemark.totalCount}</p>
       {data.allMarkdownRemark.edges.map(({node},index) => (
-        <div>
+        <div key={index}>
           <h3>{node.frontmatter.title} - {node.frontmatter.date}</h3>
           <p>{node.excerpt}</p>
         </div>
